@@ -532,6 +532,7 @@ global const JDBC_COLTYPE_TINYINT = -6
 global const JDBC_COLTYPE_VARBINARY = -3
 global const JDBC_COLTYPE_VARCHAR = 12
 global const JDBC_COLTYPE_TIMESTAMP_LOCAL_TIMEZONE = -102
+global const JDBC_COLTYPE_INTERVAL_DAY_TO_SECOND = -104
 
 #Map column types to their respective get methods
 global const get_method_dict = Dict(
@@ -573,6 +574,8 @@ global const get_method_dict = Dict(
         JDBC_COLTYPE_VARCHAR => getString,
         # JDBC_COLTYPE_TIMESTAMP_LOCAL_TIMEZONE => -102
         JDBC_COLTYPE_TIMESTAMP_LOCAL_TIMEZONE => getTimestamp,
+        # JDBC_COLTYPE_INTERVAL_DAY_TO_SECOND => -104
+        JDBC_COLTYPE_INTERVAL_DAY_TO_SECOND => getString
         )
 
 """
