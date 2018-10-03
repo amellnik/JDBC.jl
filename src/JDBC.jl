@@ -544,6 +544,7 @@ global const get_method_dict = Dict(
         JDBC_COLTYPE_BOOLEAN => getBoolean,
         JDBC_COLTYPE_CHAR => getString,
         # JDBC_COLTYPE_CLOB => 2005,
+        JDBC_COLTYPE_CLOB => getString,
         # JDBC_COLTYPE_DATALINK => 70,
         JDBC_COLTYPE_DATE => getDate,
         JDBC_COLTYPE_DECIMAL => getFloat,
